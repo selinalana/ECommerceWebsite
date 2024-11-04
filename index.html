@@ -32,6 +32,37 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 	</head>
 
 	<body>
+
+		
+
+		    <button id="view-item-button">View Item</button>
+		
+		    <script>
+		        document.getElementById('view-item-button').addEventListener('click', function() {
+		            window.dataLayer = window.dataLayer || [];
+		            window.dataLayer.push({
+		                event: 'view_item_list',
+		                items: [{
+		                    item_id: 'ITM_12345',
+		                    item_name: 'Python',
+		                    affiliation: 'online_Course',
+		                    currency: 'INR',
+		                    discount: 100,
+		                    item_brand: 'MOOC',
+		                    item_category: 'Python',
+		                    item_category2: 'ML',
+		                    item_category3: 'DS',
+		                    item_category4: 'CS',
+		                    item_variant: 'Online',
+		                    location_id: 'ChIJIQBpAG2ahYAR_6128GeTUEo',
+		                    price: 5000,
+		                    quantity: 1
+		                }]
+		            });
+		        });
+		    </script>
+
+
 		<!-- Google Tag Manager (noscript) -->
 <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-MPDL9G9L"
 height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
@@ -44,6 +75,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 				<a class="navbar-brand" href="index.html">Furni<span>.</span></a>
 
 				<button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarsFurni" aria-controls="navbarsFurni" aria-expanded="false" aria-label="Toggle navigation">
+					
 					<span class="navbar-toggler-icon"></span>
 				</button>
 
